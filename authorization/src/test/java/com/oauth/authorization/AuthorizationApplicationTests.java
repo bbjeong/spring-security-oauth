@@ -1,10 +1,10 @@
-package com.oauth.provider;
+package com.oauth.authorization;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class OauthProviderApplicationTests {
+class AuthorizationApplicationTests {
 
     @Test
     void contextLoads() {

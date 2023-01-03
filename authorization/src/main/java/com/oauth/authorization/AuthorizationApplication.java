@@ -1,13 +1,13 @@
-package com.oauth.provider;
+package com.oauth.authorization;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class OauthProviderApplication {
+public class AuthorizationApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(OauthProviderApplication.class, args);
+        SpringApplication.run(AuthorizationApplication.class, args);
     }
 
 }

@@ -1,4 +1,4 @@
-package com.oauth.provider.config;
+package com.oauth.authorization.config;
 
 import com.nimbusds.jose.jwk.JWKSet;
 import com.nimbusds.jose.jwk.RSAKey;
