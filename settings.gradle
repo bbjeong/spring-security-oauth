@@ -1,3 +1,4 @@
 rootProject.name = 'spring-oauth-provider'
 
 include 'authorization'
+include 'resource'
