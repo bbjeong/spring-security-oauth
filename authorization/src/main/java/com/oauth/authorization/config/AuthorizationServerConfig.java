@@ -9,6 +9,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.Ordered;
 import org.springframework.core.annotation.Order;
+import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.OAuth2AuthorizationServerConfiguration;
@@ -41,7 +42,7 @@ public class AuthorizationServerConfig {
     }
 
     @Bean
-    public RegisteredClientRepository registeredClientRepository() {
+    public RegisteredClientRepository registeredClientRepository(JdbcTemplate jdbcTemplate) {
         RegisteredClient registeredClient = RegisteredClient.withId(UUID.randomUUID().toString())
                 .clientId("articles-client")
                 .clientSecret("{noop}secret")
