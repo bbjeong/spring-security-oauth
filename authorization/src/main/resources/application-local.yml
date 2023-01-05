@@ -22,5 +22,7 @@ spring:
         web: debug
         security: debug
 
-
+# 인증 서버
+auth-server:
+  url: http://auth-server:9000
 
