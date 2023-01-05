@@ -39,4 +39,5 @@ public class WebClientConfig {
 
         return authorizedClientManager;
     }
+
 }

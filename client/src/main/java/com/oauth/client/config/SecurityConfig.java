@@ -21,4 +21,5 @@ public class SecurityConfig {
                 .oauth2Client(withDefaults());
         return http.build();
     }
+
 }
