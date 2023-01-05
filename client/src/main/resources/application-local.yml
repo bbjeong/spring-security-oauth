@@ -43,7 +43,7 @@ spring:
             client-name: articles-client-authorization-code
         provider:
           spring:
-            issuer-uri: http://localhost:9000
+            issuer-uri: http://auth-server:9000
 
 
 
