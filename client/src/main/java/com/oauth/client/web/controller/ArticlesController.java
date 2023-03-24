@@ -23,6 +23,11 @@ public class ArticlesController {
 
     private final WebClient webClient;
 
+    @GetMapping(value = "/")
+    public String getArticles() {
+        return "Hello from client";
+    }
+
     @GetMapping(value = PathConstants.ARTICLES)
     public String[] getArticles(
             @RegisteredOAuth2AuthorizedClient("articles-client-authorization-code") OAuth2AuthorizedClient authorizedClient
